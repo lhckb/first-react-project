@@ -5,9 +5,263 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4 {
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 15%;
+  padding: 10px;
+  position: relative;
+  background-color: aqua;
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0;
+}
+
+footer h4 {
+  padding: 0;
+}
+
+footer h3 {
+  text-decoration: none;
+}
+
+footer a {
+  margin: 5px;
+  text-decoration: inherit;
+  color: black;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.footer-button {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  transition: all 0.3s linear;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.show-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 90vw;
+  height: fit-content;
+  padding: 10px;
+  max-width: 620px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: #aa2222;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  box-shadow: #aa2222;
+  transition: all 0.3s linear;
+  transform: translate(-100%);
+  border-right: 2px solid black;
+}
+
+.sidebar-header {
+  margin: 30px;
+}
+
+.sidebar-body {
+  margin: 30px;
+}
+.sidebar-body h1 {
+  margin: 0;
+}
+
+.sidebar-btn {
+  size: 20px;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.sidebar-button, .footer-button {
+  background-color: aquamarine;
+  border: 2px solid black;
+  display: flex; 
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px;
+  padding-left: 10%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 400px;
+  }
+}
+
+.profile-picture {
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.header {
+  height: 10%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aqua;
+  border-bottom: 2px solid black;
+  margin: 0;
+}
+
+.title, .options {
+  height: 100%;
+  display: flex;
+  width: 50%;
+}
+
+.title {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.presentation {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  height: fit-content;
+  align-items: center;
+}
+
+.welcome {
+  font-size: larger;
+}
+
+.showcase {
+  display: flex;
+  background-color: aquamarine;
+  border-radius: 10px;
+  border: 2px dashed black;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.logo-stepps {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.job-description {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px dashed grey;
+  flex-wrap: wrap;
+}
+
+.project-image {
+  padding: 10px;
+}
+
+.project-description {
+  width: 75%;
+}
+
+.course {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px dashed grey;
 }
