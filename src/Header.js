@@ -7,25 +7,35 @@ const Header = () => {
   const { openSidebar } = useContext(AppContext)
 
   return <nav className="header">
+
     <div className="title">
+
       <button className="sidebar-btn" onClick={openSidebar}>
         <FaBars />
       </button>
-      <Link to='/'>
+      
+      <a href="#">
         <h2>React Fixation Project</h2>
-      </Link>
+      </a>
+      
     </div>
+
     <div className="options">
-      <Link to='/courses'>
+      
+      <a href="#courses">
         Courses and certificates
-      </Link>
-      <Link to='/projects'>
+      </a>
+      
+      <a href="#projects">
         Personal projects
-      </Link>
-      <Link to='/experience'>
+      </a>
+ 
+      <a href="#workxp">
         Work experience
-      </Link>
+      </a>
+  
     </div>
+
   </nav>
 }
 

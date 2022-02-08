@@ -1,25 +1,29 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home'
-import Header from './Header'
-import Footer from './Footer'
-import Sidebar from './Sidebar'
-import WorkXp from './WorkXp';
-import Projects from './Projects'
-import Courses from './Courses';
+import React, { useContext } from "react";
+import Header from "./Header";
+import Home from "./Home"
+import Projects from "./Projects"
+import Courses from "./Courses"
+import WorkXp from "./WorkXp"
+import Footer from "./Footer";
+import Modal from "./Modal";
+import Sidebar from "./Sidebar";
+import { AppContext } from "./contexts";
+import { Link } from "react-router-dom";
+import { FaBars } from 'react-icons/fa'
+
 
 const App = () => {
-  return <Router>
-    <Header/>
-    <Sidebar/>
-      <Routes>
-        <Route path='/' exact element={<Home/>}/>
-        <Route path='/experience' exact element={<WorkXp/>}/> 
-        <Route path='/projects' exact element={<Projects/>}/>
-        <Route path='/courses' exact element={<Courses/>}/>
-      </Routes>
-    <Footer />
-    </Router>
+
+  return <>
+  <Header />
+  <Home />
+  <WorkXp />
+  <Projects />
+  <Courses />
+  <Modal />
+  <Sidebar />
+  <Footer />
+  </>
 }
 
 export default App

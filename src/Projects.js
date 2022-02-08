@@ -3,11 +3,13 @@ import takenote from './assets/takenote.png'
 import citizen from './assets/citizen.png'
 
 const Projects = () => {
-  return <div className="projects-container">
+  return <div id="projects" className="projects">
+
+  <h1>Personal Projects</h1>
 
     <div className="project">
 
-      <h1>Takenote</h1>
+      <h2>Takenote</h2>
 
       <div className="project-image">
 
@@ -30,7 +32,7 @@ const Projects = () => {
 
     <div className="project">
 
-      <h1>Citizen registration API</h1>
+      <h2>Citizen registration API</h2>
 
       <div className="project-image">
 

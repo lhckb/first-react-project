@@ -26,6 +26,7 @@ const Sidebar = () => {
     return ''
   }
 
+  // css trick to show or hide sidebar depending on return of called function
   return <aside className={`sidebar ${checkSidebar()}`}>
     <div className="sidebar-header">
 

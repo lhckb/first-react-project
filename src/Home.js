@@ -10,7 +10,8 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="container">
+
+    <div className="home">
 
       <section className="presentation">
 
@@ -37,6 +38,7 @@ const Home = () => {
       </section>
 
     </div>
+    
   )
 }
 

@@ -13,7 +13,8 @@ const Modal = () => {
     return ''
   }
 
-  return <div className={`modal ${checkModal()}`}>
+  // css trick to show or hide modal depending on return of function called
+  return <div className={`modal ${checkModal()}`}>  
 
     <div className="modal-container">
 

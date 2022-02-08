@@ -9,13 +9,19 @@ const certificates = [
 
 const Courses = () => {
 
-  return <div className="container">
+  return <div id="courses" className="courses">
+
+  <h1>Courses and certificates</h1>
 
     {certificates.map(course => {
       return <div className="course">
-        <h1>{ course.name }</h1>
+
+        <h2>{ course.name }</h2>
+
         <h3>{ course.date }</h3>
+
         <img src={course.image} alt="" />
+        
       </div>
     })}
     
