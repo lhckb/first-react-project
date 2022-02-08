@@ -17,6 +17,7 @@ body {
   text-align: center;
   transition: all 0.3s linear;
 }
+
 body a {
   color: gainsboro;
 }
@@ -87,6 +88,7 @@ footer a {
   visibility: visible;
   z-index: 10;
 }
+
 .modal-container {
   background: #ffffff;
   border-radius: 10px;
